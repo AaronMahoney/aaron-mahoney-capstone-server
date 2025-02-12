@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "express": "^4.21.2"
+  },
+  "name": "capstone-server",
+  "version": "1.0.0",
+  "description": "server",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aaron",
+  "license": "ISC"
+}
