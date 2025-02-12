@@ -45,11 +45,18 @@ No external APIs, I looked but none available, so I'll build the JSON files myse
 ### Sitemap
 
 Home Page 
+
 About Page (quick blurb with a Newfoundland overview)
+
 Famous People Page (musicians, athletes, actors)
+
 Places Page (places to see/visit for tourists)
+
 Sayings Randomizer (click a button, get a Newfie phrase at random)
+
 Guidebook (leave comments/feedback)
+
+Instead of a dedicated photos page I decided to incorporate pictures into the other pages so I get the best of both worlds without the extra work.
 
 ### Mockups
 
@@ -145,6 +152,6 @@ Response:
 
 ## Future Implementations
 
-I'm going to start out with an icon of the island of Newfoundland centered in the page as part of the header, with the nav bar vertically spread out underneath. I'll try my best to see if I can make it dynamic where clicking the icon/button would instead drop the nav bar down. I know that would take time, and involve some work but based on the Snaps filter I think I may be able to figure it out.
+I'm going to start out with an icon of the island of Newfoundland centered in the page as part of the header, with the nav bar vertically spread out on either side of it. I'll try my best to see if I can make it dynamic where clicking the icon/button would instead drop the nav bar down underneathe. I know that would take time and involve some work, but based on the Snaps filter I think I may be able to figure it out.
 
 The other one that came to me recently which I know is outside my scope would be a way to "virtually" Screech someone in. Getting Screeched In is a process for visitors to Newfoundland where they take a shot of Screech rum (which I can say as a native son is AWFUL), kiss a cod fish, and get a certificate attesting to the fact. My idea would be to switch the guidebook to a form where people would enter their details and submit it, and it would create a certificate image for them that they could save. I've already done some searching about the feasbility of this, and I think it would be too much if it's possible at all, but I figured I'd mention all the same.
