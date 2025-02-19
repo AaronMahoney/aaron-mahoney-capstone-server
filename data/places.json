@@ -1,0 +1,72 @@
+[
+    {
+        "id": 1,
+        "name": "George Street",
+        "location": "",
+        "description": "",
+        "picture": ""
+    },
+    {
+        "id": 2,
+        "name": "The Battery",
+        "location": "",
+        "description": "",
+        "picture": ""
+    },
+    {
+        "id": 3,
+        "name": "Signal Hill",
+        "location": "",
+        "description": "",
+        "picture": ""
+    },
+    {
+        "id": 4,
+        "name": "Cape Spear",
+        "location": "",
+        "description": "",
+        "picture": ""
+    },
+    {
+        "id": 5,
+        "name": "Downtown St. John's",
+        "location": "",
+        "description": "",
+        "picture": ""
+    },
+    {
+        "id": 6,
+        "name": "Fogo Island",
+        "location": "",
+        "description": "",
+        "picture": ""
+    },
+    {
+        "id": 7,
+        "name": "Bonavista",
+        "location": "",
+        "description": "",
+        "picture": ""
+    },
+    {
+        "id": 8,
+        "name": "Gros Morne",
+        "location": "",
+        "description": "",
+        "picture": ""
+    },
+    {
+        "id": 9,
+        "name": "Dildo",
+        "location": "",
+        "description": "",
+        "picture": ""
+    },
+    {
+        "id": 10,
+        "name": "Saint Pierre and Miquelon",
+        "location": "",
+        "description": "",
+        "picture": ""
+    }
+]
