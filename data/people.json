@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Alan Doyle",
-        "occupation": "Singer",
+        "occupation": "Musician",
         "history": [
             "Doyle was born on May 17, 1969 in Petty Harbour and is the former front man of the band Great Big Sea.",
             "He’s now a solo artist performing around North America with his band.",
@@ -94,18 +94,6 @@
         "picture": "Terry-Ryan.jpg"
     },
     {
-        "id": 8,
-        "name": "David Cochrane",
-        "occupation": "Broadcaster",
-        "history": [
-            "Cochrane was born on May 4, 1973 in Mount Pearl.",
-            "Cochrane was a reporter for the CBC’s network affiliate in St. John's from 1997 until 2016.",
-            "He won a Canadian Screen Award for Best Local News Reportage at the 2nd Canadian Screen Awards in 2014 for his report on a major police drug smuggling investigation in the province.",
-            "He joined the network's national parliamentary bureau in Ottawa as a reporter in 2016, and was sometimes seen as a fill-in host of Power & Politics prior to being named the show's permanent host in 2023."
-        ],
-        "picture": "David-Cochrane.jpg"
-    },
-    {
         "id": 9,
         "name": "Brad Gushue",
         "occupation": "Professional curler",
@@ -117,6 +105,18 @@
             "He’s a two-time Brier winner representing Newfoundland, a three-time Brier winner representing Team Canada, and also won a Brier in 2022 as a Wild Card."
         ],
         "picture": "Brad-Gushue.jpg"
+    },
+    {
+        "id": 8,
+        "name": "David Cochrane",
+        "occupation": "Broadcaster",
+        "history": [
+            "Cochrane was born on May 4, 1973 in Mount Pearl.",
+            "Cochrane was a reporter for the CBC’s network affiliate in St. John's from 1997 until 2016.",
+            "He won a Canadian Screen Award for Best Local News Reportage at the 2nd Canadian Screen Awards in 2014 for his report on a major police drug smuggling investigation in the province.",
+            "He joined the network's national parliamentary bureau in Ottawa as a reporter in 2016, and was sometimes seen as a fill-in host of Power & Politics prior to being named the show's permanent host in 2023."
+        ],
+        "picture": "David-Cochrane.jpg"
     },
     {
         "id": 10,
