@@ -8,5 +8,10 @@
     "name": "Ken",
     "location": "Kilbride",
     "comment": "Yeah way!"
+  },
+  {
+    "name": "Brian",
+    "location": "Kingston",
+    "comment": "Love The Rock."
   }
 ]
