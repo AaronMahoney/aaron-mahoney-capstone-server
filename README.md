@@ -2,6 +2,12 @@
 
 The Rock 
 
+How to run: Dependencies needed to run project in the ReadME on the client repo. 
+
+Client stuff for ENV: http://localhost:8080. Google Maps api key: AIzaSyAZf_HUkfjvtjdsuhd5rFMTVswmVDiVTYI. 
+
+Server env: PORT=8080
+
 ## Overview
 
 An interactive visitor guide for Newfoundland.
