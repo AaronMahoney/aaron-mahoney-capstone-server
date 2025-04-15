@@ -2,10 +2,9 @@
  * @param {import('knex')} knex
  */
 exports.seed = async function (knex) {
-  // Deletes ALL existing entries
+
   await knex('sayings').del();
 
-  // Inserts seed entries
   await knex('sayings').insert([
     {
       saying_title: 'CFA or Come From Away',
