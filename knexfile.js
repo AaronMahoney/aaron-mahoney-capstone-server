@@ -1,4 +1,4 @@
-module.exports = {
+const config = {
   development: {
     client: 'mysql2',
     connection: {
@@ -46,3 +46,5 @@ module.exports = {
     }
   }
 };
+
+export default config;

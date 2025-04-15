@@ -1,4 +1,6 @@
-
+/**
+ * @param {import('knex')} knex
+ */
 exports.seed = function (knex) {
   return knex('people').del()
     .then(function () {

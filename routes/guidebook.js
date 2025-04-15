@@ -1,14 +1,7 @@
 import express from "express";
-import { fileURLToPath } from 'url';
-import path from 'path';
-import fs from 'fs';
+import knex from "../db.js";
 
 const router = express.Router();
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const commentsFilePath = path.join(__dirname, "../data/comments.json");
 
 router.post("/", async (req, res) => {
     try {
@@ -34,27 +27,24 @@ router.post("/", async (req, res) => {
             return res.status(400).json({ error: "Comment must be under 200 characters." });
         }
 
-        const comments = JSON.parse(fs.readFileSync(commentsFilePath));
-        const newComment = { name, location, comment };
-        comments.push(newComment);
-
-        fs.writeFileSync(commentsFilePath, JSON.stringify(comments, null, 2));
+        const [newComment] = await knex("comments")
+            .insert({ name, location, comment })
 
         res.status(201).json(newComment);
-
     } catch (error) {
-        console.error("Error processing the comment:", error);
+        console.error("Error saving comment to database:", error);
         res.status(500).json({ error: "Failed to save comment" });
     }
 });
 
-router.get("/comments", (req, res) => {
-    fs.readFile(commentsFilePath, 'utf8', (err, data) => {
-        if (err) {
-            return res.status(500).json({ error: 'Error reading comments file' });
-        }
-        res.json(JSON.parse(data));
-    });
+router.get("/comments", async (req, res) => {
+    try {
+        const comments = await knex("comments").select("*");
+        res.status(200).json(comments);
+    } catch (error) {
+        console.error("Error getting comments:", error);
+        res.status(500).json({ error: "Failed to get comments" });
+    }
 });
 
 export default router;
