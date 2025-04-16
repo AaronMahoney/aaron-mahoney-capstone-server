@@ -17,23 +17,28 @@ router.get("/:id", async (req, res) => {
     const id = Number(req.params.id);
 
     try {
-        const person = await knex('people')
-            .where({ id })
-            .first();
+        const rows = await knex('people')
+            .leftJoin('people_history', 'people.id', 'people_history.person_id')
+            .select(
+                'people.id',
+                'people.name',
+                'people.occupation',
+                'people.picture',
+                'people_history.history_text'
+            )
+            .where('people.id', id);
 
-        if (person) {
-            const history = await knex('people_history')
-                .where({ person_id: id })
-                .select('history_text');
-
-            const historyArray = history.map(entry => entry.history_text);
-
-            res.status(200).json({ ...person, history: historyArray });
-        } else {
-            res.status(404).json({ error: "Person not found" });
+        if (!rows || rows.length === 0) {
+            return res.status(404).json({ error: "Person not found" });
         }
+
+        const { id: personId, name, occupation, picture } = rows[0];
+        const history = rows.map(row => row.history_text).filter(Boolean);
+
+        res.status(200).json({ id: personId, name, occupation, picture, history });
+
     } catch (error) {
-        console.error("Error getting person by ID", error);
+        console.error("Error getting person by ID:", error);
         res.status(500).json({ error: "Internal server error" });
     }
 });
