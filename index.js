@@ -6,6 +6,7 @@ import places from "./routes/places.js";
 import sayings from "./routes/sayings.js";
 import guidebook from "./routes/guidebook.js";
 import signup from "./routes/signup.js";
+import login from './routes/login.js';
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -24,5 +25,6 @@ app.use("/places", places);
 app.use("/sayings", sayings);
 app.use("/guidebook", guidebook);
 app.use("/signup", signup);
+app.use('/login', login);
 
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
